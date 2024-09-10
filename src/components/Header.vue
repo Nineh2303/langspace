@@ -46,20 +46,10 @@
 <script setup lang="ts">
 import {ref} from "vue";
 import {ArrowLongRightIcon, Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid"
-import HeaderMenuComponent from "@/components/HeaderMenuComponent.vue";
-
-const dropCourse = ref(false)
+import HeaderMenuComponent from "./HeaderMenuComponent.vue";
 const dropMenu = ref(false)
 
-const listCourse: string[] = [
-  "Course 1",
-  "Course 2",
-  "Course 2",
-  "Course 2",
-  "Course 2",
-  "Course 2",
-  "Course 2",
-]
+
 </script>
 
 <style lang="scss" scoped>
