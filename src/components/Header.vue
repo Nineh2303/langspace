@@ -3,6 +3,7 @@
     <div class="relative w-[80%] h-[100px] flex flex-row justify-between items-center max-[1400px]:justify-start">
       <img src="@/assets/logo.jpg" class="h-[100px]" alt="">
       <ul class="flex flex-row items-center space-x-[100px] h-full bg-white transition-all duration-500 overflow-hidden
+      max-2xl:space-x-[30px]
       max-lg:absolute lg-max:top-0 max-lg:flex-col max-lg:content-center
       max-lg:items-start max-lg:w-full max-lg:top-[100px] max-lg:space-x-0"
           :class="dropMenu ?' max-lg:h-[250px]' : 'max-lg:h-0'">
@@ -14,10 +15,13 @@
           <HeaderMenuComponent menu-name="Langspace là ai" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
-          <HeaderMenuComponent menu-name="Các khóa học" :is-dropdown="true"/>
+          <HeaderMenuComponent menu-name="Các khóa học" :is-dropdown="true" :drop-down-data="listCourse"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
           <HeaderMenuComponent menu-name="Lịch khai giảng" :is-dropdown="false"/>
+        </li>
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+          <HeaderMenuComponent menu-name="Block" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:w-full max-lg:h-[50px] lg:hidden">
           <button
@@ -48,7 +52,12 @@ import {ref} from "vue";
 import {ArrowLongRightIcon, Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid"
 import HeaderMenuComponent from "./HeaderMenuComponent.vue";
 const dropMenu = ref(false)
+const listCourse:string[] = [
+    "Khóa mất gốc",
+    "Khóa cơ bản",
+    "Khóa nâng cao",
 
+]
 
 </script>
 
