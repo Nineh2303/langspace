@@ -8,19 +8,19 @@
       max-lg:items-start max-lg:w-full max-lg:top-[100px] max-lg:space-x-0"
           :class="dropMenu ?' max-lg:h-[250px]' : 'max-lg:h-0'">
         <!--        class=" w-full text-lg font-bold p-[5px] hover:bg-[#1030bf] hover:text-white rounded-[5px]"-->
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[95%] max-lg:h-[50px] px-5">
           <HeaderMenuComponent menu-name="Trang chủ" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[95%] max-lg:h-[50px] px-5">
           <HeaderMenuComponent menu-name="Langspace là ai" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[95%] max-lg:h-[50px] px-5">
           <HeaderMenuComponent menu-name="Các khóa học" :is-dropdown="true" :drop-down-data="listCourse"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[95%] max-lg:h-[50px] px-5">
           <HeaderMenuComponent menu-name="Lịch khai giảng" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full max-lg:h-[50px]">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[95%] max-lg:h-[50px] px-5">
           <HeaderMenuComponent menu-name="Block" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:w-full max-lg:h-[50px] lg:hidden">
