@@ -3,11 +3,11 @@
     <router-link to="/" class="flex items-center">{{ props.menuName }}
         <ChevronDownIcon v-if="isDropdown" class="size-8 pl-2"/>
     </router-link>
-    <div v-if="!isDropdown" class="bg-blue-600 h-1 transition-all  duration-500 max-lg:hidden" :class="[isHover ? 'w-full' : 'w-0']"/>
+    <div v-if="!isDropdown" class="bg-blue-600 h-1 transition-all  duration-500 max-lg:hidden max-lg:w-[95%]" :class="[isHover ? 'w-full' : 'w-0']"/>
     <ul v-if="isDropdown"
           :class="isHover ?'max-h-[400px]':'max-h-0'"
         class="fixed bg-white h-[200px] mt-2 transition-all duration-500 w-[200px] z-10 overflow-hidden shadow-sm shadow-gray-500 rounded-lg
-        max-lg:w-[300px]
+        max-lg:w-[300px] max-lg:border-t-4
 ">
 
 

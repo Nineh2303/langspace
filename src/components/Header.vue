@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-0 w-full flex flex-col items-center">
-    <div class="relative w-[80%] h-[100px] flex flex-row justify-between items-center max-[1400px]:justify-between">
-      <img src="@/assets/logo.jpg" class="h-[100px]" alt="">
+    <div class="relative w-[80%] h-[100px] flex flex-row justify-between items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
+      <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
       <ul class="flex flex-row items-center space-x-[100px] h-full bg-white transition-all duration-500 overflow-hidden
       max-2xl:space-x-[30px]
       max-lg:absolute lg-max:top-0 max-lg:flex-col max-lg:content-center
