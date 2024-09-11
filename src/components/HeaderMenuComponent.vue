@@ -1,5 +1,5 @@
 <template>
-  <div @mouseenter="isHover= true" @mouseleave="isHover= false" class="h-auto w-full" @click="isHover =!isHover">
+  <div @mouseenter="isHover= true" @mouseleave="isHover= false" class="h-auto w-full" @click="handleIsHover">
     <router-link v-if="!isDropdown" to="/"
                  class="flex flex-row w-full items-center max-lg:h-[50px] hover:text-[#1030bf]"
                  @click="handle"
@@ -46,6 +46,9 @@ interface HeaderMenuProps {
 
 const props = defineProps<HeaderMenuProps>()
 const isHover = ref<boolean>(false)
+const handleIsHover=()=>{
+  if (isHover.value == false) isHover.value= true
+}
 </script>
 
 <style lang="scss" scoped>

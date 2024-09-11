@@ -10,20 +10,20 @@
       max-lg:items-start max-lg:w-[100%] max-lg:top-[100px] max-lg:space-x-0 max-lg:h-[1000px]"
           :class="!dropMenu ?' max-lg:left-[-1000px]' : 'max-lg:left-0'">
         <!--        class=" w-full text-lg font-bold p-[5px] hover:bg-[#1030bf] hover:text-white rounded-[5px]"-->
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 py-2">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
           <HeaderMenuComponent menu-name="Trang chủ" :handle="()=>handleMenu()" :is-dropdown="false" />
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 ">
           <HeaderMenuComponent menu-name="Langspace là ai" :handle="()=>handleMenu()" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Các khóa học"  :handle="()=>handleMenu()":is-dropdown="true" :drop-down-data="listCourse"/>
+          <HeaderMenuComponent menu-name="Các khóa học"  :handle="()=>handleMenu()" :is-dropdown="true" :drop-down-data="listCourse"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Lịch khai giảng" :handle="()=>handleMenu()" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Lịch khai giảng"  :is-dropdown="false" :handle="()=>handleMenu()" />
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Blog"  :handle="()=>handleMenu()" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Blog" :handle="()=>handleMenu()" :is-dropdown="false"/>
         </li>
         <li class="flex items-center justify-center font-bold text-lg max-lg:w-full  lg:hidden">
           <button
@@ -61,7 +61,7 @@ const listCourse:string[] = [
 
 ]
 const handleMenu = ()=>{
-  dropMenu.value =!dropMenu.value
+ dropMenu.value = false
 }
 </script>
 
