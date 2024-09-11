@@ -1,13 +1,13 @@
 <template>
-  <div class="fixed top-0 w-full flex flex-col items-center border-b-2  bg-white z-10">
+  <div class="fixed top-0 w-full flex flex-col items-center border-b-2 bg-white z-10">
     <div class="relative w-[80%] h-auto flex flex-row lg:space-x-[7%] items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
      <router-link to="/course" @click="handleMenu">
-       <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
+       <img src="@/assets/logo.jpg" class="h-[80px] max-lg:h-[60px]" alt="">
      </router-link>
       <ul class="flex flex-row items-center space-x-[50px] h-full bg-white transition-all duration-500 overflow-hidden
       max-2xl:space-x-[30px]
       max-lg:absolute max-lg:ml-0 max-lg:flex-col max-lg:content-center
-      max-lg:items-start max-lg:w-[100%] max-lg:top-[100px] max-lg:space-x-0 max-lg:h-[1000px]"
+      max-lg:items-start max-lg:w-[100%] max-lg:top-[60px] max-lg:space-x-0 max-lg:h-[1000px]"
           :class="!dropMenu ?' max-lg:left-[-1000px]' : 'max-lg:left-0'">
         <!--        class=" w-full text-lg font-bold p-[5px] hover:bg-[#1030bf] hover:text-white rounded-[5px]"-->
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
