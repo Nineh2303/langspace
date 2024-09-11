@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 w-full flex flex-col items-center border-b-2">
+  <div class="fixed top-0 w-full flex flex-col items-center border-b-2  bg-white z-10">
     <div class="relative w-[80%] h-auto flex flex-row lg:space-x-[7%] items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
      <router-link to="/course" @click="handleMenu">
        <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
