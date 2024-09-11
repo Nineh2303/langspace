@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="bg-[url('assets/Background_web.jpg')] mt-5 w-full flex justify-between max-lg:flex-col bg-cover rounded-lg h-[600px]">
-      <div class="pt-[25px] pl-[100px]">
+      <div class="pt-[25px] pl-[100px] max-lg:pl-[15px]">
         <h1 class="text-[60px] text-white font-bold max-lg:text-[35px]">Chọn Langspace vì điều gì ?</h1>
         <div class="flex items-center py-2">
           <div class="h-5 w-5 rounded-[50%] bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
