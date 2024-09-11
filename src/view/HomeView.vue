@@ -32,9 +32,9 @@
       <img src="@/assets/Lo-trinh-tach-nen-1.png" alt="" class="pt-[50px] w-[750px] max-lg:pt-[25px]">
     </div>
   </div>
-  <div class="bg-[url('assets/Background_web.jpg')] mt-5 w-full flex justify-between max-lg:flex-col bg-cover rounded-lg h-[600px]">
-      <div class="pt-[25px] pl-[100px] max-lg:pl-[15px]">
-        <h1 class="text-[60px] text-white font-bold max-lg:text-[35px]">Chọn Langspace vì điều gì ?</h1>
+  <div class="bg-[url('assets/Background_web.jpg')] mt-5 w-full flex justify-between max-lg:flex-col bg-cover rounded-lg h-[600px] max-lg:h-auto max-lg:py-5">
+      <div class="pt-[25px] pl-[100px] max-lg:px-[10px]">
+        <h1 class="text-[60px] text-white font-bold max-lg:text-[25px]">Chọn Langspace vì điều gì ?</h1>
         <div class="flex items-center py-2">
           <div class="h-5 w-5 rounded-[50%] bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
           <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Thực chiến Tiếng Anh tối đa trên lớp và ngoại khoá</p>
