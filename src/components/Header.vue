@@ -1,27 +1,27 @@
 <template>
   <div class="fixed top-0 w-full flex flex-col items-center">
-    <div class="relative w-[80%] h-auto flex flex-row justify-between items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
+    <div class="relative w-[80%] h-auto flex flex-row space-x-[5%] items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
       <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
-      <ul class="flex flex-row items-center space-x-[100px] h-full bg-white transition-all duration-500 overflow-hidden
+      <ul class="flex flex-row items-center space-x-[50px] h-full bg-white transition-all duration-500 overflow-hidden
       max-2xl:space-x-[30px]
       max-lg:absolute lg-max:top-0 max-lg:flex-col max-lg:content-center
-      max-lg:items-start max-lg:w-full max-lg:top-[100px] max-lg:space-x-0 max-lg:h-[1000px]"
+      max-lg:items-start max-lg:w-[100%] max-lg:top-[100px] max-lg:space-x-0 max-lg:h-[1000px]"
           :class="!dropMenu ?' max-lg:left-[-1000px]' : 'max-lg:left-0'">
         <!--        class=" w-full text-lg font-bold p-[5px] hover:bg-[#1030bf] hover:text-white rounded-[5px]"-->
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[90%] px-5">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 py-2">
           <HeaderMenuComponent menu-name="Trang chủ" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[90%] px-5">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 ">
           <HeaderMenuComponent menu-name="Langspace là ai" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[90%] px-5">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
           <HeaderMenuComponent menu-name="Các khóa học" :is-dropdown="true" :drop-down-data="listCourse"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[90%] px-5">
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
           <HeaderMenuComponent menu-name="Lịch khai giảng" :is-dropdown="false"/>
         </li>
-        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-[90%] px-5">
-          <HeaderMenuComponent menu-name="Block" :is-dropdown="false"/>
+        <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
+          <HeaderMenuComponent menu-name="Blog" :is-dropdown="false"/>
         </li>
         <li class="flex items-center justify-center font-bold text-lg max-lg:w-full  lg:hidden">
           <button
