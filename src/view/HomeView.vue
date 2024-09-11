@@ -20,7 +20,7 @@
           </div>
         </SwiperSlide>
       </Swiper>
-    <div class="bg-[url('assets/1-1.png')] w-full flex justify-between max-lg:flex-col rounded-lg h-[600px]">
+    <div class="bg-[url('assets/1-1.png')] w-full flex justify-between max-lg:flex-col rounded-lg h-[600px] max-lg:h-auto">
       <div class="pt-[150px]">
         <h1 class="text-[20px] text-[#1030bf] font-bold max-lg:text-[18px]">TIẾNG ANH NHƯ " GIÓ " CÙNG LANGSPACE</h1>
         <h1 class="text-[35px] text-[#1030bf] font-bold pt-[10px] max-lg:text-[30px]">
@@ -32,28 +32,28 @@
       <img src="@/assets/Lo-trinh-tach-nen-1.png" alt="" class="pt-[50px] w-[750px] max-lg:pt-[25px]">
     </div>
   </div>
-  <div class="bg-[url('assets/Background_web.jpg')] mt-5 h-[450px] w-full flex justify-between max-lg:flex-col bg-cover rounded-lg h-[600px]">
+  <div class="bg-[url('assets/Background_web.jpg')] mt-5 w-full flex justify-between max-lg:flex-col bg-cover rounded-lg h-[600px]">
       <div class="pt-[25px] pl-[100px]">
-        <h1 class="text-[60px] text-white font-bold max-lg:text-[40px]">Chọn Langspace vì điều gì ?</h1>
+        <h1 class="text-[60px] text-white font-bold max-lg:text-[35px]">Chọn Langspace vì điều gì ?</h1>
         <div class="flex items-center py-2">
-          <div class="h-5 w-5 rounded-full bg-[#ffbb01]"/>
-          <p class="text-white text-lg font-bold ml-2">Thực chiến Tiếng Anh tối đa trên lớp và ngoại khoá</p>
+          <div class="h-5 w-5 rounded-[50%] bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
+          <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Thực chiến Tiếng Anh tối đa trên lớp và ngoại khoá</p>
         </div>
         <div class="flex items-center py-2">
-          <div class="h-5 w-5 rounded-full bg-[#ffbb01]"/>
-          <p class="text-white text-lg font-bold ml-2">Không dạy "công nghiệp" - không nhồi nhét học <viên></viên></p>
+          <div class="h-5 w-5 rounded-full bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
+          <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Không dạy "công nghiệp" - không nhồi nhét học <viên></viên></p>
         </div>
         <div class="flex items-center py-2">
-          <div class="h-5 w-5 rounded-full bg-[#ffbb01]"/>
-          <p class="text-white text-lg font-bold ml-2">Không chèo kéo, "vẽ vời" đóng thêm tiền</p>
+          <div class="h-5 w-5 rounded-full bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
+          <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Không chèo kéo, "vẽ vời" đóng thêm tiền</p>
         </div>
         <div class="flex items-center py-2">
-          <div class="h-5 w-5 rounded-full bg-[#ffbb01]"/>
-          <p class="text-white text-lg font-bold ml-2">Lớp ít học viên đảm bảo ai cũng được tương tác</p>
+          <div class="h-5 w-5 rounded-full bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
+          <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Lớp ít học viên đảm bảo ai cũng được tương tác</p>
         </div>
         <div class="flex items-center py-2">
-          <div class="h-5 w-5 rounded-full bg-[#ffbb01]"/>
-          <p class="text-white text-lg font-bold ml-2">Giáo viên tận tâm, năng động, hài hước</p>
+          <div class="h-5 w-5 rounded-full bg-[#ffbb01] max-lg:h-[10px] max-lg:w-[10px]"/>
+          <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Giáo viên tận tâm, năng động, hài hước</p>
         </div>
         <button
             class="bg-[#ffbb01] w-[200px] h-[50px] text-xl text-[#1030bf] font-bold flex items-center justify-center rounded-lg mt-10
