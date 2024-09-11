@@ -1,6 +1,10 @@
 <template>
   <div @mouseenter="isHover= true" @mouseleave="isHover= false" class="h-auto w-full" @click="isHover =!isHover">
-    <router-link v-if="!isDropdown" to="/" class="flex flex-row w-full items-center max-lg:h-[50px] hover:text-[#1030bf]">{{ props.menuName }}
+    <router-link v-if="!isDropdown" to="/"
+                 class="flex flex-row w-full items-center max-lg:h-[50px] hover:text-[#1030bf]"
+                 @click="handle"
+    >
+      {{ props.menuName }}
     </router-link>
     <div  v-else class="flex flex-col overflow-hidden cursor-pointer">
       <h1 class="flex flex-row items-center max-lg:h-[50px] hover:text-[#1030bf]">
@@ -16,7 +20,7 @@
         <router-link to="/" v-for="(course, index) in dropDownData"
                      class=" px-3 flex items-center text-base py-3 max-lg:ml-[10px] max-lg:py-1 max-lg:border-none w-[175px] hover:text-white
                       hover:bg-[#1030bf] transition-all duration-500 max-lg:rounded-lg max-lg:h-[50px] max-lg:w-[90%]"
-             :class="index+1 == dropDownData?.length ? '' : 'border-b-2'">
+             :class="index+1 == dropDownData?.length ? '' : 'border-b-2'" @click="handle">
             {{ course }}
         </router-link>
 
@@ -37,6 +41,7 @@ interface HeaderMenuProps {
   menuName: string,
   isDropdown: boolean
   dropDownData?: string  []
+  handle? :()=>void
 }
 
 const props = defineProps<HeaderMenuProps>()

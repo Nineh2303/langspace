@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[110px]">
+  <div>
     This is home view
   </div>
 <!--      <Loading class="fixed top-0" :class=" !isLoading && `loading`" />-->

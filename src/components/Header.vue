@@ -1,7 +1,9 @@
 <template>
-  <div class="fixed top-0 w-full flex flex-col items-center">
-    <div class="relative w-[80%] h-auto flex flex-row lg:space-x-[5%] items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
-      <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
+  <div class="fixed top-0 w-full flex flex-col items-center border-b-2">
+    <div class="relative w-[80%] h-auto flex flex-row lg:space-x-[7%] items-center max-[1400px]:justify-between max-lg:w-full max-lg:px-[20px]">
+     <router-link to="/course" @click="handleMenu">
+       <img src="@/assets/logo.jpg" class="h-[100px] max-lg:h-[60px]" alt="">
+     </router-link>
       <ul class="flex flex-row items-center space-x-[50px] h-full bg-white transition-all duration-500 overflow-hidden
       max-2xl:space-x-[30px]
       max-lg:absolute max-lg:ml-0 max-lg:flex-col max-lg:content-center
@@ -9,19 +11,19 @@
           :class="!dropMenu ?' max-lg:left-[-1000px]' : 'max-lg:left-0'">
         <!--        class=" w-full text-lg font-bold p-[5px] hover:bg-[#1030bf] hover:text-white rounded-[5px]"-->
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 py-2">
-          <HeaderMenuComponent menu-name="Trang chủ" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Trang chủ" :handle="()=>handleMenu()" :is-dropdown="false" />
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5 ">
-          <HeaderMenuComponent menu-name="Langspace là ai" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Langspace là ai" :handle="()=>handleMenu()" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Các khóa học" :is-dropdown="true" :drop-down-data="listCourse"/>
+          <HeaderMenuComponent menu-name="Các khóa học"  :handle="()=>handleMenu()":is-dropdown="true" :drop-down-data="listCourse"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Lịch khai giảng" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Lịch khai giảng" :handle="()=>handleMenu()" :is-dropdown="false"/>
         </li>
         <li class="flex items-center font-bold text-lg max-lg:border-b-2 max-lg:w-full px-5">
-          <HeaderMenuComponent menu-name="Blog" :is-dropdown="false"/>
+          <HeaderMenuComponent menu-name="Blog"  :handle="()=>handleMenu()" :is-dropdown="false"/>
         </li>
         <li class="flex items-center justify-center font-bold text-lg max-lg:w-full  lg:hidden">
           <button
@@ -58,7 +60,9 @@ const listCourse:string[] = [
     "Khóa nâng cao",
 
 ]
-
+const handleMenu = ()=>{
+  dropMenu.value =!dropMenu.value
+}
 </script>
 
 <style lang="scss" scoped>
