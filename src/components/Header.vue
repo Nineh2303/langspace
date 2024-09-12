@@ -35,7 +35,7 @@
           </button>
         </li>
       </ul>
-      <button
+       <button
           class="bg-[#1030bf] w-[200px] h-[35px] text-md text-white font-bold flex items-center justify-center rounded-lg hover:bg-[#ffbb01] hover:text-black
               max-lg:w-full max-lg:mt-[10px] max-[1400px]:w-[100px] max-lg:hidden
 ">
@@ -53,13 +53,9 @@
 import {ref} from "vue";
 import {ArrowLongRightIcon, Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid"
 import HeaderMenuComponent from "./HeaderMenuComponent.vue";
+import {listCourse} from "@/helper/datas.ts";
 const dropMenu = ref(false)
-const listCourse:string[] = [
-    "Khóa mất gốc",
-    "Khóa cơ bản",
-    "Khóa nâng cao",
 
-]
 const handleMenu = ()=>{
  dropMenu.value = false
 }
