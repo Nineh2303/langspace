@@ -63,8 +63,8 @@
         <p class="text-white text-lg font-bold ml-2 max-lg:text-[15px]">Giáo viên tận tâm, năng động, hài hước</p>
       </div>
       <button
-          class="bg-[#ffbb01] w-[200px] h-[50px] text-xl text-[#1030bf] font-bold flex items-center justify-center rounded-lg mt-10
-            hover:bg-[#fff] hover:text-[#ffbb01]
+          class="bg-[#ffbb01] w-[200px] h-[50px] text-xl text-[#1030bf] font-bold flex  items-center justify-center rounded-lg mt-10
+            hover:bg-[#fff] hover:text-[#ffbb01] max-lg:justify-around
 ">
         Đăng ký ngay
         <ArrowLongRightIcon class="size-6 ml-5 cursor-pointer"/>
@@ -72,13 +72,22 @@
     </div>
   </div>
   <div class="mt-5 w-full flex justify-around
-  max-lg:flex-col bg-cover rounded-lg h-[600px] max-lg:h-auto max-lg:py-5 max-lg:items-center">
-      <h1 class="text-[50px] font-bold pt-[100px] text-[#1030bf] max-lg:text-[15px]">"MẤU CHỐT" HỌC TỐT <br class="max-lg:hidden"/> TIẾNG ANH</h1>
+  max-lg:flex-col bg-cover rounded-lg h-[600px] max-lg:h-auto max-lg:py-5 max-lg:items-center max-lg:mt-1">
+    <div class="flex flex-col max-lg:items-center">
+      <h1 class="text-[50px] font-bold pt-[100px] text-[#1030bf] max-lg:text-[20px] max-lg:pt-[10px]">"MẤU CHỐT" HỌC TỐT <br class="max-lg:hidden"/> TIẾNG ANH</h1>
+      <button
+          class="bg-[#1030bf] w-[200px] h-[50px] text-xl text-white font-bold flex  items-center justify-center rounded-lg mt-5
+             max-lg:justify-around">
+        Đăng ký học thử
+      </button>
+    </div>
       <iframe
       src="https://www.youtube.com/embed/LsHz0-PXi5I"
-      width="335px"
-      height="600px"
+      width="280px"
+      height="500px"
       class="my-5 rounded-sm"
+      referrerpolicy="strict-origin-when-cross-origin"
+      loading="lazy"
       ></iframe>
   </div>
   <!--      <Loading class="fixed top-0" :class=" !isLoading && `loading`" />-->
