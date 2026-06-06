@@ -28,7 +28,7 @@
       <h1 class=" mt-[120px] text-[20px] text-[#1030bf] font-bold max-lg:text-[18px] max-lg:mt-2">TIẾNG ANH NHƯ " GIÓ "
         CÙNG LANGSPACE</h1>
       <h1 class="text-[35px] text-[#1030bf] font-bold pt-[10px] max-lg:text-[30px]">
-        MÔ HÌNH KHOÁ HỌC UNITE <br> THỰC CHIẾN CÙNG "TÂY"
+        MÔ HÌNH KHOÁ HỌC UNITE <br> THỰC CHIẾN CÙNG "TIN HỌC VUI"
       </h1>
       <p class="text-xl italic font-bold max-lg:text-[15px]">Kết hợp độc đáo giữa học trên lớp và cùng người nước ngoài
         đi tham quan, cà phê, đi chợ, trò chơi dân gian,...</p>
